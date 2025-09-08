@@ -6,7 +6,7 @@ USE sono_website;
 CREATE TABLE site_config (
 id INT AUTO_INCREMENT PRIMARY KEY,
 config_key VARCHAR(50) NOT NULL UNIQUE,
-config_value TE
+config_value TEXT,
 config_type ENUM('text', 'textarea', 'image', 'url') DEFAULT 'text',
 section VARCHAR(30) NOT NULL,
 label VARCHAR(100) NOT NULL,
